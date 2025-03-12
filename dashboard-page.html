@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hearthfolk</title>
+    <link rel="stylesheet" href="dashboard-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+
+<body>
+    <header>
+        <ul class="icon-and-text">
+            <li><img src="assets/header-icon.png" alt="Logo of"></li>
+            <li>
+                <h2>Let's order something for you.</h2>
+            </li>
+        </ul>
+        <ul class="onboarding-buttons">
+            <li class="sign-up-button"><a href="">Sign up</a></li>
+            <li class="log-in-button"><a href="">Log in</a></li>
+        </ul>
+    </header>
+
+    <nav>
+        <a href=""><img src="assets/logo.svg" alt="Logo of"></a>
+        <a href=""><img src="assets/dashboard-icon.svg" alt="Dashboard icon"></a>
+    </nav>
+
+    <main>
+        <section class="search-and-cart">
+            <form action="" class="search-form">
+                <input type="text" placeholder="Search Products" id="search-bar">
+                <input type="submit" value="" id="search-button">
+            </form>
+
+            <a href="" class="shopping-cart-button"><img src="assets/cart-icon.svg" alt="Shopping cart icon"> Cart
+                (0)</a>
+        </section>
+
+        <section class="categories-and-products">
+            <section class="categories-section">
+                <h3>Categories</h3>
+                <ul class="categories-list">
+                    <li class="categories-card categories-button" data-category="all-products">
+                        <a href="">
+                            <h5>16</h5>
+                            <img src="assets/chocolates/chocolate-hazelnut-croissant.webp" alt="Logo">
+                            <p>All Products</p>
+                        </a>
+                    </li>
+                    <li class="categories-card categories-button" data-category="classics-category">
+                        <a href="">
+                            <h5>6</h5>
+                            <img src="assets/classics/classic-butter-croissant.webp" alt="Logo">
+                            <p>Classics</p>
+                        </a>
+                    </li>
+                    <li class="categories-card categories-button" data-category="chocolates-category">
+                        <a href="">
+                            <h5>4</h5>
+                            <img src="assets/chocolates/double-chocolate-pain-au-chocolat.webp" alt="Logo">
+                            <p>Chocolates</p>
+                        </a>
+                    </li>
+                    <li class="categories-card categories-button" data-category="savory-category">
+                        <a href="">
+                            <h5>4</h5>
+                            <img src="assets/savory-line/caldereta-croissant.webp" alt="Logo">
+                            <p>Savory Line</p>
+                        </a>
+                    </li>
+                    <li class="categories-card categories-button" data-category="specials-category">
+                        <a href="">
+                            <h5>2</h5>
+                            <img src="assets/specials/almond-croissant.webp" alt="Logo">
+                            <p>Specials</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="products-section">
+                <h3 class="product-quantity">All Products (16)</h3>
+                <p class="query-message">No products found</p>
+                <ul class="products-list">
+                    <li class="product-card" data-category="classics-category">
+                        <a href="">
+                            <img src="assets/classics/classic-butter-croissant.webp" alt="Product"
+                                class="product-image">
+                            <div class="product-details">
+                                <div class="product-name-and-rating">
+                                    <h4 class="product-name">Classic Butter Croissant</h4>
+                                    <span>★★★★☆ 36 Rating</span>
+                                </div>
+                                <p class="product-price">
+                                    From ₱60
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product-card" data-category="classics-category">
+                        <a href="">
+                            <img src="assets/classics/ham-and-cheese-croissant.webp" alt="Product"
+                                class="product-image">
+                            <div class="product-details">
+                                <div class="product-name-and-rating">
+                                    <h4 class="product-name">Ham and Cheese Croissant</h4>
+                                    <span>★★★★☆ 36 Rating</span>
+                                </div>
+                                <p class="product-price">
+                                    From ₱89
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product-card" data-category="classics-category">
+                        <a href="">
+                            <img src="assets/classics/pain-au-chocolat.webp" alt="Product" class="product-image">
+                            <div class="product-details">
+                                <div class="product-name-and-rating">
+                                    <h4 class="product-name">Pain Au Chocolat</h4>
+                                    <span>★★★★☆ 36 Rating</span>
+                                </div>
+                                <p class="product-price">
+                                    From ₱70
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product-card" data-category="classics-category">
+                        <a href="">
+                            <img src="assets/classics/kouign-amann.webp" alt="Product" class="product-image">
+                            <div class="product-details">
+                                <div class="product-name-and-rating">
+                                    <h4 class="product-name">Kouign Amann</h4>
+                                    <span>★★★★☆ 36 Rating</span>
+                                </div>
+                                <p class="product-price">
+                                    From ₱70
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product-card" data-category="classics-category">
+                        <a href="">
+                            <img src="assets/classics/apple-danish.webp" alt="Product" class="product-image">
+                            <div class="product-details">
+                                <div class="product-name-and-rating">
+                                    <h4 class="product-name">Apple Danish</h4>
+                                    <span>★★★★☆ 36 Rating</span>
+                                </div>
+                                <p class="product-price">
+                                    From ₱70
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product-card" data-category="classics-category">
+                        <a href="">
+                            <img src="assets/classics/strawberry-danish.webp" alt="Product" class="product-image">
+                            <div class="product-details">
+                                <div class="product-name-and-rating">
+                                    <h4 class="product-name">Strawberry Danish</h4>
+                                    <span>★★★★☆ 36 Rating</span>
+                                </div>
+                                <p class="product-price">
+                                    From ₱81
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product-card" data-category="chocolates-category">
+                        <a href="">
+                            <img src="assets/chocolates/double-chocolate-pain-au-chocolat.webp" alt="Product"
+                                class="product-image">
+                            <div class="product-details">
+                                <div class="product-name-and-rating">
+                                    <h4 class="product-name">Double Chocolate Pain Au Chocolat</h4>
+                                    <span>★★★★☆ 36 Rating</span>
+                                </div>
+                                <p class="product-price">
+                                    From ₱93
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product-card" data-category="chocolates-category">
+                        <a href="">
+                            <img src="assets/chocolates/chocolate-kouign-amann.webp" alt="Product"
+                                class="product-image">
+                            <div class="product-details">
+                                <div class="product-name-and-rating">
+                                    <h4 class="product-name">Chocolate Kouign Amann</h4>
+                                    <span>★★★★☆ 36 Rating</span>
+                                </div>
+                                <p class="product-price">
+                                    From ₱78
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product-card" data-category="chocolates-category">
+                        <a href="">
+                            <img src="assets/chocolates/chocolate-hazelnut-croissant.webp" alt="Product"
+                                class="product-image">
+                            <div class="product-details">
+                                <div class="product-name-and-rating">
+                                    <h4 class="product-name">Chocolate Hazelnut Croissant</h4>
+                                    <span>★★★★☆ 36 Rating</span>
+                                </div>
+                                <p class="product-price">
+                                    From ₱89
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product-card" data-category="chocolates-category">
+                        <a href="">
+                            <img src="assets/chocolates/white-chocolate-matcha-croissants.webp" alt="Product"
+                                class="product-image">
+                            <div class="product-details">
+                                <div class="product-name-and-rating">
+                                    <h4 class="product-name">White Chocolate Matcha Croissants</h4>
+                                    <span>★★★★☆ 36 Rating</span>
+                                </div>
+                                <p class="product-price">
+                                    From ₱95
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product-card" data-category="savory-category">
+                        <a href="">
+                            <img src="assets/savory-line/caldereta-croissant.webp" alt="Product" class="product-image">
+                            <div class="product-details">
+                                <div class="product-name-and-rating">
+                                    <h4 class="product-name">Caldereta Croissant</h4>
+                                    <span>★★★★☆ 36 Rating</span>
+                                </div>
+                                <p class="product-price">
+                                    From ₱145
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product-card" data-category="savory-category">
+                        <a href="">
+                            <img src="assets/savory-line/cubano-pork-roll.webp" alt="Product" class="product-image">
+                            <div class="product-details">
+                                <div class="product-name-and-rating">
+                                    <h4 class="product-name">Cubano Pork Roll</h4>
+                                    <span>★★★★☆ 36 Rating</span>
+                                </div>
+                                <p class="product-price">
+                                    From ₱140
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product-card" data-category="savory-category">
+                        <a href="">
+                            <img src="assets/savory-line/spinach-cheese-quiche.webp" alt="Product"
+                                class="product-image">
+                            <div class="product-details">
+                                <div class="product-name-and-rating">
+                                    <h4 class="product-name">Spinach Cheese Quiche</h4>
+                                    <span>★★★★☆ 36 Rating</span>
+                                </div>
+                                <p class="product-price">
+                                    From ₱91
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product-card" data-category="savory-category">
+                        <a href="">
+                            <img src="assets/savory-line/spinach-and-garlic-cheese-croissant-pizza.webp" alt="Product"
+                                class="product-image">
+                            <div class="product-details">
+                                <div class="product-name-and-rating">
+                                    <h4 class="product-name">Spinach and Garlic Cheese Croissant Pizza</h4>
+                                    <span>★★★★☆ 36 Rating</span>
+                                </div>
+                                <p class="product-price">
+                                    From ₱505
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product-card" data-category="specials-category">
+                        <a href="">
+                            <img src="assets/specials/almond-croissant.webp" alt="Product" class="product-image">
+                            <div class="product-details">
+                                <div class="product-name-and-rating">
+                                    <h4 class="product-name">Almond Croissant</h4>
+                                    <span>★★★★☆ 36 Rating</span>
+                                </div>
+                                <p class="product-price">
+                                    From ₱128
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="product-card" data-category="specials-category">
+                        <a href="">
+                            <img src="assets/specials/paris-brest-croissant.webp" alt="Product" class="product-image">
+                            <div class="product-details">
+                                <div class="product-name-and-rating">
+                                    <h4 class="product-name">Paris-Brest Croissant</h4>
+                                    <span>★★★★☆ 36 Rating</span>
+                                </div>
+                                <p class="product-price">
+                                    From ₱143
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <section class="modal-overlay"></section>
+    
+    <section class="sign-up-modal">
+        <button class="close-button">&times;</button>
+        <div class="modal-content">
+            <img src="assets/logo.svg" alt="Logo" class="hearthfolk-logo">
+            <ul>
+                <li><h3>Sign up to order</h3></li>
+                <li class="log-in-button"><a href="">Already have an account? Log in here.</a></li>
+            </ul>
+
+            <div class="sign-up-form">
+                <form action="">
+                    <div class="name-fields">
+                        <div class="field-group">
+                            <label for="fname">First Name</label>
+                            <input type="text" placeholder="Your first name">
+                        </div>
+
+                        <div class="field-group">
+                            <label for="lname">Last Name</label>
+                            <input type="text" placeholder="Your last name">
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Your email">
+                    </div>
+
+                    <div class="field-group">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Your password">
+                    </div>
+                </form>
+            </div>
+
+            <a href="" class="onboarding-button">Sign up</a>
+        </div>
+
+        <img src="assets/log-in-picture.webp" alt="">
+    </section>
+
+    <section class="log-in-modal">
+        <button class="close-button">&times;</button>
+        <div class="modal-content">
+            <img src="assets/logo.svg" alt="Logo" class="hearthfolk-logo">
+            <ul>
+                <li><h3>Log in to order</h3></li>
+                <li class="sign-up-button"><a href="">Don't have an account? Sign up here.</a></li>
+            </ul>
+
+            <div class="log-in-form">
+                <form action="">
+                    <div class="field-group">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Your email">
+                    </div>
+
+                    <div class="field-group">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Your password">
+                    </div>
+                </form>
+            </div>
+
+            <a href="" class="onboarding-button">Log in</a>
+        </div>
+
+        <img src="assets/log-in-picture.webp" alt="">
+    </section>
+
+    <script src="dashboard-page.js"></script>
+</body>
+
+</html>
