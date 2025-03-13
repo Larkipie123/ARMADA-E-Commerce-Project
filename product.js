@@ -332,5 +332,3 @@ span.innerHTML = arrCart.length;
 setProdDetail();
 setProdImg();
 setSimilarProduct();
-
-
