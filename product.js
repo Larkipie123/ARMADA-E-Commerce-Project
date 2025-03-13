@@ -145,8 +145,6 @@ const products = [
     }
 ];
 
-
-
 console.log(localStorage.getItem('userLoggedIn'));
 const isLoggedIn = localStorage.getItem('userLoggedIn');
 const category = localStorage.getItem('category');
@@ -301,9 +299,12 @@ btnAddCart.addEventListener('click', function () {
         modalOverlay.style.display = "flex";
         verifyCart.style.display = "flex";
         let total = parseFloat(quantityInput.value * products[itemNum - 1].price);
-        let newCart = [`assets/${products[itemNum - 1].category}/${products[itemNum - 1].image}`,products[itemNum - 1].name, products[itemNum - 1].price, quantityInput.value, total];
+        let newCart = [`assets/${products[itemNum - 1].category}/${products[itemNum - 1].image}`, products[itemNum - 1].name, products[itemNum - 1].price, quantityInput.value, total];
         arrCart.push(newCart);
         localStorage.setItem('cart', JSON.stringify(arrCart));
+        const span = document.querySelector('.header-main a > span');
+        span.innerHTML = arrCart.length;
+        quantityInput.value = "0";
         setTimeout(() => {
             arrCart.push
             modalOverlay.style.display = "none";
@@ -318,7 +319,7 @@ btnAddCart.addEventListener('click', function () {
 const cartLink = document.querySelector('.header-main a');
 
 cartLink.addEventListener('click', function () {
-    if(isLoggedIn == "true"){
+    if (isLoggedIn == "true") {
         cartLink.href = 'cart.html';
         window.location.href = link.getAttribute('href');
     } else {
