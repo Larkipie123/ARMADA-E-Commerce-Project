@@ -518,6 +518,10 @@ section.categories-and-products {
     input:invalid {
         border: 2px solid red;
     }
+
+    .exchange-modals:hover {
+        text-decoration: underline;
+    }
     
 /* FOR MOBILE SCREENS */
 
