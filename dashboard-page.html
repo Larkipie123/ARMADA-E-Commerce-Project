@@ -15,12 +15,17 @@
         <ul class="icon-and-text">
             <li><img src="assets/header-icon.png" alt="Logo of"></li>
             <li>
-                <h2>Let's order something for you.</h2>
+                <h2 class="text-greeting">Let's order something for you.</h2>
             </li>
         </ul>
         <ul class="onboarding-buttons">
             <li class="sign-up-button"><a href="">Sign up</a></li>
             <li class="log-in-button"><a href="">Log in</a></li>
+        </ul>
+
+        <ul class="profile-menu hidden">
+            <li><img src="assets/profile-icon.png" alt="Icon of the user's profile picture" class="profile-icon"></li>
+            <li class="dropdown hidden"><button id="sign-out-button">Sign Out</button></li>
         </ul>
     </header>
 
@@ -42,9 +47,9 @@
 
         <section class="categories-and-products">
             <section class="categories-section">
-                <h3>Categories</h3>
+                <h3 class="categories-title">Categories</h3>
                 <ul class="categories-list">
-                    <li class="categories-card categories-button" data-category="all-products">
+                    <li class="categories-card categories-button active" data-category="all-products">
                         <a href="">
                             <h5>16</h5>
                             <img src="assets/chocolates/chocolate-hazelnut-croissant.webp" alt="Logo">
@@ -305,7 +310,7 @@
                         </a>
                     </li>
                     <li class="product-card" data-category="specials-category" item-num="16">
-                        <a href="" >
+                        <a href="">
                             <img src="assets/specials/paris-brest-croissant.webp" alt="Product" class="product-image">
                             <div class="product-details">
                                 <div class="product-name-and-rating">
@@ -339,7 +344,7 @@
                     <div class="name-fields">
                         <div class="field-group">
                             <label for="fname">First Name</label>
-                            <input type="text" placeholder="Your first name">
+                            <input type="text" placeholder="Your first name" id="user-first-name">
                         </div>
 
                         <div class="field-group">
