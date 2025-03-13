@@ -19,15 +19,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const onboardingTriggers = document.querySelectorAll('.onboarding-button');
     const signUpForm = document.querySelector('.sign-up-form form');
     const logInForm = document.querySelector('.log-in-form form');
-    const greetingText = document.querySelector('.text-greeting');
     const categoryCard = document.querySelectorAll('.categories-card');
     const cartButton = document.querySelector('.shopping-cart-button');
 
     // Array of greetings
-    const greetings = [
-        "Hello", "Welcome", "Good day", "Hey there",
-        "Great to see you", "Nice to have you here"
-    ];
 
     showSignUpModal.forEach(signUpButton => {
         signUpButton.addEventListener("click", function (event) {
@@ -157,16 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (validateForm(form)) {
                 console.log("User clicked log in/sign up");
 
-                // Get first name from input field
-                const firstNameInput = form.querySelector('#user-first-name');
-                const firstName = firstNameInput ? firstNameInput.value.trim() : "User";
-
-                // Select a random greeting
-                const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
-
                 localStorage.setItem("userLoggedIn", "true");
-                localStorage.setItem("userFirstName", firstName);
-                localStorage.setItem("userGreeting", randomGreeting);
 
                 location.reload();
             } else {
@@ -174,18 +160,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         })
     });
-
-    function updateHeaderText() {
-        let isLoggedIn = localStorage.getItem("userLoggedIn") === "true";
-        let storedName = localStorage.getItem("userFirstName") || "";
-        let storedGreeting = localStorage.getItem("userGreeting") || "Welcome";
-
-        if (isLoggedIn && storedName) {
-            greetingText.textContent = `${storedGreeting}, ${storedName}`;
-        } else {
-            greetingText.textContent = "Let's order something for you.";
-        }
-    }
 
     profilePicture.addEventListener("click", function () {
         console.log("Toggling profile dropdown");
@@ -197,8 +171,6 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.removeItem("userLoggedIn");
         location.reload();
     });
-
-    updateHeaderText();
 
     // Get item-num attribute
     productCards.forEach(card => {
