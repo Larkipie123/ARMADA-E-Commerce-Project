@@ -266,8 +266,11 @@ btnPay.addEventListener('click', function () {
         cvc.value == "" ? cvc.style.border = "1px solid red" : cvc.style.border = "1px solid green";
         cvc.value.length != 3 ? cvc.style.border = "1px solid red" : cvc.style.border = "1px solid green";
     } else {
-        modalOverlay.style.display = "flex";
-        paymentLayout.style.display = "flex";
+        modalOverlay.style.display = "none";
+        paymentLayout.style.display = "none";
+        arrCart = [];
+        localStorage.setItem('cart', JSON.stringify(arrCart));
         alert('Payment details are valid. Proceeding with payment...');
+        location.reload();
     }
 });
