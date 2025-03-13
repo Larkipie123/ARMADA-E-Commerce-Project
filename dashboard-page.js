@@ -223,8 +223,17 @@ document.addEventListener("DOMContentLoaded", function () {
     if (cartButton) {
         cartButton.addEventListener("click", function(event) {
             event.preventDefault();
-
-            window.location.href = "cart.html";
+    
+            if (isLoggedIn) {
+                // User is logged in, go to cart page
+                window.location.href = "cart.html";
+            } else {
+                // User is NOT logged in, show login modal
+                if (logInModal && modalOverlay) {
+                    modalOverlay.classList.add("active");
+                    logInModal.classList.add("active");
+                }
+            }
         });
     }
 });
