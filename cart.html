@@ -34,12 +34,12 @@
                     <input type="search" placeholder="Search Products">
                     <img src="assets/icon/search_icon.png" alt="Search icon">
                 </form>
-                <button><img src="assets/icon/cart_icon.png" alt="Cart icon"> Cart (<span>0</span>)</button>
+                <a><img src="assets/icon/cart_icon.png" alt="Cart icon"> Cart (<span>0</span>)</a>
             </section>
             <section class="cart-detail">
                 <div class="arrowUp"></div>
                 <div class="product-list">
-                    <ul>
+                    <!-- <ul>
                         <li>
                             <img src="assets/classics/apple-danish.webp" lt="product image">
                             <p>Product Name<span>$ 10</span></p>
@@ -61,7 +61,7 @@
                                 </div>
                             </div>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="order-detail">
                     <h5>Shipping Information</h5>
@@ -97,6 +97,7 @@
             <img class="logo" src="assets/icon/logo.png" alt="logo">
             <img class="card" src="assets/icon/visa.png" alt="visa">
             <img class="card" src="assets/icon/master_card.png" alt="master card">
+            <button>X</button>
         </header>
         <form>
             <h5>Card Details</h5>
@@ -108,7 +109,7 @@
             </div>
             <div class="line"></div>
             <p>Total Amount<span>$ 00</span></p>
-            <input type="button" value="Pay">
+            <input id="btnPay" type="button" value="Pay">
         </form>
     </div>
     <script src="cart.js"></script>

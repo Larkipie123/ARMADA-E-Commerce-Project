@@ -139,6 +139,7 @@ aside {
                 flex-direction: row;
                 align-items: center;
                 border: none;
+                font-size: 14px;
                 font-weight: 400;
                 text-decoration: none;
 
