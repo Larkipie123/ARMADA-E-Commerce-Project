@@ -88,7 +88,7 @@ nav {
     }
 
     nav img {
-        width: 22px;
+        width: 60px;
     }
 
 main {
@@ -344,7 +344,7 @@ section.categories-and-products {
         }
 
         .hearthfolk-logo {
-            width: 2.5em;
+            width: 300px;
         }
 
         .sign-up-modal ul, 
@@ -522,6 +522,10 @@ section.categories-and-products {
     .exchange-modals:hover {
         text-decoration: underline;
     }
+
+    .logo {
+        width: 200px;
+    }
     
 /* FOR MOBILE SCREENS */
 
@@ -644,6 +648,19 @@ section.categories-and-products {
     .log-in-modal img:last-child {
             display: none;
         }
+
+    .logo {
+        width: 170px;
+    }
+
+    .dropdown {
+        z-index: 999;
+        right: -20px;
+    }
+
+    .hearthfolk-logo {
+        width: 200px;
+    }
 }
 
 /* FOR TABLET SCREENS */
@@ -658,7 +675,7 @@ section.categories-and-products {
     }
 
     .icon-and-text h2 {
-        font-size: 16px;
+        display: none;
     }
 
     .categories-section,
@@ -701,6 +718,14 @@ section.categories-and-products {
         left: 8%;
         width: 38em;
         height: 30em;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    nav img {
+        width: 40px;
     }
 }
 
