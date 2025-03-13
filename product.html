@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Hearthfolk</title>
+    <link rel="stylesheet" href="product.css">
 </head>
 
 <body>
+    <div class="modal-overlay"></div>
+    <div class="cart-valid">
+        <img src="assets/icon/check.png" alt="check">
+        <p>Added to cart successfully!</p>
+    </div>
     <aside><img src="assets/icon/logo.png" alt="logo"></aside>
     <div class="right-side">
         <header>
@@ -27,20 +32,14 @@
                     <input type="search" placeholder="Search Products">
                     <img src="assets/icon/search_icon.png" alt="Search icon">
                 </form>
-                <button><img src="assets/icon/cart_icon.png" alt="Cart icon"> Cart (<span>0</span>)</button>
+                <a href=""><img src="assets/icon/cart_icon.png" alt="Cart icon"> Cart (<span>0</span>)</a>
             </section>
 
             <a><img>All Products (<span>0</span>)</a>
 
             <section class="product-detail">
                 <div class="product-image">
-                    <img src="assets/classics/apple-danish.jpg" alt="product img">
-                    <ul>
-                        <li><img src="assets/classics/classic-butter-croissant.jpg" alt="product img"></li>
-                        <li><img src="assets/classics/ham-and-cheese-croissant.jpg" alt="product img"></li>
-                        <li><img src="assets/classics/kouign-amann.jpg" alt="product img"></li>
-                        <li><img src="assets/classics/pain-au-chocolat.jpg" alt="product img"></li>
-                    </ul>
+                    <img src="assets/classics/apple-danish.webp" alt="product img">
                 </div>
                 <div class="product-items">
                     <h1>Product Name</h1>
@@ -66,16 +65,16 @@
                             </span>
                         </label>
                         <p class="Total">Total Amount<span>$ 00</span></p>
-                        <button><img src="assets/icon/cart_fill.png" alt="Cart icon"> Add to Cart</button>
+                        <button id="addCartBtn"><img src="assets/icon/cart_fill.png" alt="Cart icon"> Add to Cart</button>
                     </div>
                 </div>
             </section>
 
             <section class="similar-items">
                 <h5>Similar Items</h5>
-                <ul>
+                <!-- <ul>
                     <li>
-                        <img src="assets/classics/classic-butter-croissant.jpg" alt="product img">
+                        <img src="assets/classics/classic-butter-croissant.webp" alt="product img">
                         <div>
                             <div class="product-assets">
                                 <h5>Product Name</h5>
@@ -92,7 +91,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="assets/classics/ham-and-cheese-croissant.jpg" alt="product img">
+                        <img src="assets/classics/ham-and-cheese-croissant.webp" alt="product img">
                         <div>
                             <div class="product-assets">
                                 <h5>Product Name</h5>
@@ -109,7 +108,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="assets/classics/kouign-amann.jpg" alt="product img">
+                        <img src="assets/classics/kouign-amann.webp" alt="product img">
                         <div>
                             <div class="product-assets"> 
                                 <h5>Product Name</h5>
@@ -126,7 +125,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="assets/classics/pain-au-chocolat.jpg" alt="product img">
+                        <img src="assets/classics/pain-au-chocolat.webp" alt="product img">
                         <div>
                             <div class="product-assets">
                                 <h5>Product Name</h5>
@@ -143,7 +142,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="assets/classics/strawberry-danish.jpg" alt="product img">
+                        <img src="assets/classics/strawberry-danish.webp" alt="product img">
                         <div>
                             <div class="product-assets">
                                 <h5>Product Name</h5>
@@ -159,11 +158,11 @@
                             <p>$ 0</p>
                         </div>
                     </li>
-                </ul>
+                </ul> -->
             </section>
         </main>
     </div>
-
+    <script src="product.js"></script>
 </body>
 
 </html>

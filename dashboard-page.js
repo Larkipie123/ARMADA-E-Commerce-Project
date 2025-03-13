@@ -12,7 +12,7 @@ const searchForm = document.querySelector('.search-form');
 const noResultsMessage = document.querySelector('.query-message');
 
 showSignUpModal.forEach(signUpButton => {
-    signUpButton.addEventListener("click", function(event){
+    signUpButton.addEventListener("click", function (event) {
         logInModal.classList.remove('active');
         modalOverlay.classList.add('active');
         signUpModal.classList.add('active');
@@ -21,16 +21,16 @@ showSignUpModal.forEach(signUpButton => {
 });
 
 showLogInModal.forEach(logInButton => {
-    logInButton.addEventListener("click", function(event){
+    logInButton.addEventListener("click", function (event) {
         signUpModal.classList.remove('active');
         modalOverlay.classList.add('active');
         logInModal.classList.add('active');
-        event.preventDefault(); 
+        event.preventDefault();
     });
 });
 
 closeModal.forEach(closeButton => {
-    closeButton.addEventListener("click", function(){
+    closeButton.addEventListener("click", function () {
         signUpModal.classList.remove('active');
         logInModal.classList.remove('active');
         modalOverlay.classList.remove('active');
@@ -79,8 +79,33 @@ searchBar.addEventListener("input", () => {
     });
 
     productQuantity.innerText = searchValue
-    ? `Search Results (${visibleProducts})`
-    : `All Products (${productCards.length})`;
+        ? `Search Results (${visibleProducts})`
+        : `All Products (${productCards.length})`;
 
     noResultsMessage.style.display = visibleProducts === 0 ? "block" : "none";
 });
+
+
+
+// Get item-num attribute
+productCards.forEach(card => {
+    const link = card.querySelector('a');
+
+    card.addEventListener('click', function(event) {
+        event.preventDefault();  
+
+        link.setAttribute('href', 'product.html');
+
+        const category = card.getAttribute('data-category');
+        const itemNum = card.getAttribute('item-num');
+
+        localStorage.setItem('category', category);
+        localStorage.setItem('itemNum', itemNum);
+
+        window.location.href = link.getAttribute('href');
+    });
+});
+
+/////dummy
+localStorage.setItem('userLoggedIn', true);
+console.log(localStorage.getItem('userLoggedIn'));
