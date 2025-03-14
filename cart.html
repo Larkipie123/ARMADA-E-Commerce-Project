@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discreption" content="This page can view product and place the product at the cart view">
+    <title>Hearthfolk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="cart.css" />
+</head> 
+
+<body>
+    <div class="paymentBG"></div>
+    <aside><img src="assets/icon/logo.png" alt="logo"></aside>
+    <div class="right-side">
+        <header>
+            <img src="assets/icon/leaf_icon.png" alt="icon">
+            <p>Let's order fresh items for you</p>
+            <div>
+                <img src="assets/icon/profile_pic.jpg" alt="profile image">
+                <select>
+                    <option>Logout <img alt="logout icon"></option>
+                </select>
+            </div>
+        </header>
+        <main>
+            <section class="header-main">
+                <form>
+                    <input type="search" placeholder="Search Products">
+                    <img src="assets/icon/search_icon.png" alt="Search icon">
+                </form>
+                <a><img src="assets/icon/cart_icon.png" alt="Cart icon"> Cart (<span>0</span>)</a>
+            </section>
+            <section class="cart-detail">
+                <div class="arrowUp"></div>
+                <div class="product-list">
+                    <!-- <ul>
+                        <li>
+                            <img src="assets/classics/apple-danish.webp" lt="product image">
+                            <p>Product Name<span>$ 10</span></p>
+                            <label for="quantity">Quantity
+                                <span>
+                                    <input id="quantity" type="number" value="0">
+                                    <img id="arrow-up" src="assets/icon/arrow_up.png" alt="arrow up">
+                                    <img id="arrow-down" src="assets/icon/arrow_down.png" alt="arrow up">
+                                </span>
+                            </label>
+                            <p class="Total">Total Amount<span>$ 00</span></p>
+                            <button>X</button>
+                            <div class="removeVerify">
+                                <div class="arrowLeft"></div>
+                                <p>Are you sure you want to remove this item?</p>
+                                <div>
+                                    <button class="cancelBtn">Cancel</button>
+                                    <button class="removeBtn">Remove</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul> -->
+                </div>
+                <div class="order-detail">
+                    <h5>Shipping Information</h5>
+                    <form>
+                        <section class="shipping-info">
+                            <div>
+                                <label for="fname"><input type="text" placeholder="First Name" id="fname"></label>
+                                <label for="lname"><input type="text" placeholder="Last Name" id="lname"></label>
+                            </div>
+                            <label for="address"><input type="text" placeholder="Address" id="address"></label>
+                            <label for="address2"><input type="text" placeholder="Address 2" id="address2"></label>
+                            <div>
+                                <label for="city"><input type="text" placeholder="City" id="city"></label>
+                                <label for="state"><input type="text" placeholder="State" id="state"></label>
+                                <label for="zcode"><input type="number" placeholder="Zip Code" id="zcode"></label>
+                            </div>
+                        </section>
+                        <section class="order-summary">
+                            <h5>Order Summary</h5>
+                            <p>Items<span>$00</span></p>
+                            <p>Shipping Fee<span>$00</span></p>
+                            <div class="line"></div>
+                            <p class="totalAmount">Total Amount<span>$00</span></p>
+                            <input id="btnCheckout" type="button" value="Proceed To Checkout">
+                        </section>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div class="payment">
+        <header>
+            <img class="logo" src="assets/icon/logo.png" alt="logo">
+            <img class="card" src="assets/icon/visa.png" alt="visa">
+            <img class="card" src="assets/icon/master_card.png" alt="master card">
+            <button>X</button>
+        </header>
+        <form>
+            <h5>Card Details</h5>
+            <label for="cardName"><input type="text" placeholder="Card Name" id="cardName"></label>
+            <label for="cardNum"><input type="number" placeholder="Card Number" id="cardNum"></label>
+            <div>
+                <label for="expiration"><input type="text" placeholder="Expiration" id="expiration"></label>
+                <label for="cvc"><input type="number" placeholder="CVC" id="cvc"></label>
+            </div>
+            <div class="line"></div>
+            <p>Total Amount<span>$ 00</span></p>
+            <input id="btnPay" type="button" value="Pay">
+        </form>
+    </div>
+    <script src="cart.js"></script>
+</body>
+
+</html>

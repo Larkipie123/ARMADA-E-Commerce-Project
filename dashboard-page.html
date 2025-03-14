@@ -13,20 +13,24 @@
 <body>
     <header>
         <ul class="icon-and-text">
-            <li><img src="assets/header-icon.png" alt="Logo of"></li>
+            <li><img src="assets/logo trans.png" alt="Logo of Hearthfolk" class="logo"></li>
             <li>
-                <h2>Let's order something for you.</h2>
+                <h2 class="text-greeting">Let's order something for you.</h2>
             </li>
         </ul>
         <ul class="onboarding-buttons">
             <li class="sign-up-button"><a href="">Sign up</a></li>
             <li class="log-in-button"><a href="">Log in</a></li>
         </ul>
+
+        <ul class="profile-menu hidden">
+            <li><img src="assets/profile-icon.png" alt="Icon of the user's profile picture" class="profile-icon"></li>
+            <li class="dropdown hidden"><button id="sign-out-button">Sign Out</button></li>
+        </ul>
     </header>
 
     <nav>
-        <a href=""><img src="assets/logo.svg" alt="Logo of"></a>
-        <a href=""><img src="assets/dashboard-icon.svg" alt="Dashboard icon"></a>
+        <a href=""><img src="assets/alt logo trans.png" alt="Logo of"></a>
     </nav>
 
     <main>
@@ -42,9 +46,9 @@
 
         <section class="categories-and-products">
             <section class="categories-section">
-                <h3>Categories</h3>
+                <h3 class="categories-title">Categories</h3>
                 <ul class="categories-list">
-                    <li class="categories-card categories-button" data-category="all-products">
+                    <li class="categories-card categories-button active" data-category="all-products">
                         <a href="">
                             <h5>16</h5>
                             <img src="assets/chocolates/chocolate-hazelnut-croissant.webp" alt="Logo">
@@ -86,7 +90,7 @@
                 <h3 class="product-quantity">All Products (16)</h3>
                 <p class="query-message">No products found</p>
                 <ul class="products-list">
-                    <li class="product-card" data-category="classics-category">
+                    <li class="product-card" data-category="classics-category" item-num="1">
                         <a href="">
                             <img src="assets/classics/classic-butter-croissant.webp" alt="Product"
                                 class="product-image">
@@ -101,7 +105,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="product-card" data-category="classics-category">
+                    <li class="product-card" data-category="classics-category" item-num="2">
                         <a href="">
                             <img src="assets/classics/ham-and-cheese-croissant.webp" alt="Product"
                                 class="product-image">
@@ -116,7 +120,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="product-card" data-category="classics-category">
+                    <li class="product-card" data-category="classics-category" item-num="3">
                         <a href="">
                             <img src="assets/classics/pain-au-chocolat.webp" alt="Product" class="product-image">
                             <div class="product-details">
@@ -130,7 +134,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="product-card" data-category="classics-category">
+                    <li class="product-card" data-category="classics-category" item-num="4">
                         <a href="">
                             <img src="assets/classics/kouign-amann.webp" alt="Product" class="product-image">
                             <div class="product-details">
@@ -144,7 +148,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="product-card" data-category="classics-category">
+                    <li class="product-card" data-category="classics-category" item-num="5">
                         <a href="">
                             <img src="assets/classics/apple-danish.webp" alt="Product" class="product-image">
                             <div class="product-details">
@@ -158,7 +162,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="product-card" data-category="classics-category">
+                    <li class="product-card" data-category="classics-category" item-num="6">
                         <a href="">
                             <img src="assets/classics/strawberry-danish.webp" alt="Product" class="product-image">
                             <div class="product-details">
@@ -172,7 +176,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="product-card" data-category="chocolates-category">
+                    <li class="product-card" data-category="chocolates-category" item-num="7">
                         <a href="">
                             <img src="assets/chocolates/double-chocolate-pain-au-chocolat.webp" alt="Product"
                                 class="product-image">
@@ -187,7 +191,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="product-card" data-category="chocolates-category">
+                    <li class="product-card" data-category="chocolates-category" item-num="8">
                         <a href="">
                             <img src="assets/chocolates/chocolate-kouign-amann.webp" alt="Product"
                                 class="product-image">
@@ -202,7 +206,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="product-card" data-category="chocolates-category">
+                    <li class="product-card" data-category="chocolates-category" item-num="9">
                         <a href="">
                             <img src="assets/chocolates/chocolate-hazelnut-croissant.webp" alt="Product"
                                 class="product-image">
@@ -217,7 +221,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="product-card" data-category="chocolates-category">
+                    <li class="product-card" data-category="chocolates-category" item-num="10">
                         <a href="">
                             <img src="assets/chocolates/white-chocolate-matcha-croissants.webp" alt="Product"
                                 class="product-image">
@@ -232,7 +236,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="product-card" data-category="savory-category">
+                    <li class="product-card" data-category="savory-category" item-num="11">
                         <a href="">
                             <img src="assets/savory-line/caldereta-croissant.webp" alt="Product" class="product-image">
                             <div class="product-details">
@@ -246,7 +250,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="product-card" data-category="savory-category">
+                    <li class="product-card" data-category="savory-category" item-num="12">
                         <a href="">
                             <img src="assets/savory-line/cubano-pork-roll.webp" alt="Product" class="product-image">
                             <div class="product-details">
@@ -260,7 +264,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="product-card" data-category="savory-category">
+                    <li class="product-card" data-category="savory-category" item-num="13">
                         <a href="">
                             <img src="assets/savory-line/spinach-cheese-quiche.webp" alt="Product"
                                 class="product-image">
@@ -275,7 +279,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="product-card" data-category="savory-category">
+                    <li class="product-card" data-category="savory-category" item-num="14">
                         <a href="">
                             <img src="assets/savory-line/spinach-and-garlic-cheese-croissant-pizza.webp" alt="Product"
                                 class="product-image">
@@ -290,7 +294,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="product-card" data-category="specials-category">
+                    <li class="product-card" data-category="specials-category" item-num="15">
                         <a href="">
                             <img src="assets/specials/almond-croissant.webp" alt="Product" class="product-image">
                             <div class="product-details">
@@ -304,7 +308,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="product-card" data-category="specials-category">
+                    <li class="product-card" data-category="specials-category" item-num="16">
                         <a href="">
                             <img src="assets/specials/paris-brest-croissant.webp" alt="Product" class="product-image">
                             <div class="product-details">
@@ -328,10 +332,10 @@
     <section class="sign-up-modal">
         <button class="close-button">&times;</button>
         <div class="modal-content">
-            <img src="assets/logo.svg" alt="Logo" class="hearthfolk-logo">
+            <img src="assets/logo trans.png" alt="Logo" class="hearthfolk-logo">
             <ul>
                 <li><h3>Sign up to order</h3></li>
-                <li class="log-in-button"><a href="">Already have an account? Log in here.</a></li>
+                <li class="log-in-button"><a href="" class="exchange-modals">Already have an account? Log in here.</a></li>
             </ul>
 
             <div class="sign-up-form">
@@ -339,7 +343,7 @@
                     <div class="name-fields">
                         <div class="field-group">
                             <label for="fname">First Name</label>
-                            <input type="text" placeholder="Your first name">
+                            <input type="text" placeholder="Your first name" id="user-first-name">
                         </div>
 
                         <div class="field-group">
@@ -369,10 +373,10 @@
     <section class="log-in-modal">
         <button class="close-button">&times;</button>
         <div class="modal-content">
-            <img src="assets/logo.svg" alt="Logo" class="hearthfolk-logo">
+            <img src="assets/logo trans.png" alt="Logo" class="hearthfolk-logo">
             <ul>
                 <li><h3>Log in to order</h3></li>
-                <li class="sign-up-button"><a href="">Don't have an account? Sign up here.</a></li>
+                <li class="sign-up-button"><a href="" class="exchange-modals">Don't have an account? Sign up here.</a></li>
             </ul>
 
             <div class="log-in-form">
