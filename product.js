@@ -330,6 +330,9 @@ cartLink.addEventListener('click', function () {
 const span = document.querySelector('.header-main a > span');
 span.innerHTML = arrCart.length;
 
+let spanTotal = document.querySelector('p.Total span');
+spanTotal.innerHTML = `$ ${products[itemNum - 1].price}`;
+
 setProdDetail();
 setProdImg();
 setSimilarProduct();
